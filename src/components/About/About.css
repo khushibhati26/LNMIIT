@@ -1,0 +1,89 @@
+.about-container {
+  padding: 3rem;
+  background-color: #f4f8fb; /* Light Blue background for a formal hospital feel */
+  font-family: Arial, sans-serif;
+  border: 1px solid #d1e3f0; /* Light border */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0073e6; /* Formal Blue */
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.about-title:hover {
+  color: #005bb5; /* Darker Blue on hover */
+  text-shadow: 2px 2px 6px rgba(0, 115, 230, 0.4); /* Subtle shadow effect */
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #555; /* Neutral dark gray for readability */
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-weight: bold;
+  font-style: italic;
+  color: #005bb5; /* Muted Blue for a professional touch */
+  text-shadow: 1px 1px 4px rgba(0, 91, 181, 0.2); /* Subtle shadow effect */
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: #e6f4f9; /* Light Blue */
+  padding: 2rem;
+  border-radius: 8px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d1e3f0; /* Light Blue border */
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.feature-card:hover {
+  background-color: #b3d9ef; /* Slightly darker blue on hover */
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-10px); /* 3D pop-out effect */
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0073e6; /* Formal Blue */
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card h3:hover {
+  color: #005bb5; /* Darker Blue */
+  text-shadow: 2px 2px 6px rgba(0, 91, 181, 0.4); /* Shadow effect */
+}
+
+.feature-description {
+  font-size: 1.1rem;
+  color: #555; /* Neutral dark gray */
+  font-weight: bold;
+  font-style: italic;
+  color: #005bb5; /* Muted Blue */
+  text-shadow: 1px 1px 4px rgba(0, 91, 181, 0.2); /* Subtle shadow effect */
+}
+
+@media (max-width: 768px) {
+  .features-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-card {
+      width: 80%;
+  }
+}
